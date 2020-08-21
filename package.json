@@ -1,0 +1,22 @@
+{
+  "name": "exercises",
+  "version": "1.0.0",
+  "description": "This is a repo where i would be revising all the node concepts that i learnt and want to keep the lessons i learnt documented, so that the future me or anyone like me wants to take a quick sneak peek, this repo should serve the purpose.",
+  "main": "1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manojkumardesai/quickNodePractice.git"
+  },
+  "author": "Manoj Kumar Desai <manojkumardbe@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manojkumardesai/quickNodePractice/issues"
+  },
+  "homepage": "https://github.com/manojkumardesai/quickNodePractice#readme",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
+}
