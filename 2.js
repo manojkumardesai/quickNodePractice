@@ -7,11 +7,19 @@ function printhelp() {
     console.log("");
 }
 
-var args = require('minimist')(process.argv.slice(2));
+var args = require('minimist')(process.argv.slice(2), { string: 'name' });
 
 if (args.help || !args.file) {
     printhelp();
     process.exit(1);
 }
 
-var say = require("./helloworld.js");
+var hello = require("./helloworldWithCB.js");
+
+hello.say(args.file, function(err, contents) {
+    if (err) {
+        console.error("Error: ", err);
+    } else {
+        console.log(contents.toString());
+    }
+});

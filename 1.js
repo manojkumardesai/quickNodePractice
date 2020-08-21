@@ -14,7 +14,7 @@ if (args.help || !args.file) {
     process.exit(1);
 }
 
-var hello = require("./helloworld.js");
+var hello = require("./helloworldWithCB.js");
 
 hello.say(args.file, function(err, contents) {
     if (err) {
