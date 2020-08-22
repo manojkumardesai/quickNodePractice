@@ -14,12 +14,11 @@ if (args.help || !args.file) {
     process.exit(1);
 }
 
-var hello = require("./helloworldWithCB.js");
+var hello = require("./helloworldWithAsynq.js");
 
-hello.say(args.file, function(err, contents) {
-    if (err) {
-        console.error("Error: ", err);
-    } else {
-        console.log(contents.toString());
-    }
-});
+hello.say(args.file)
+.val(function(contents) {
+    console.log(contents.toString());
+}).or(function(err) {
+    console.error("Error: ", err);
+})

@@ -1,5 +1,5 @@
 function printhelp() {
-    console.log("2.js");
+    console.log("1.js");
     console.log("");
     console.log("usage:");
     console.log("--help                 prints this help");
